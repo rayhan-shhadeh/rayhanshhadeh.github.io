@@ -7,8 +7,8 @@
   /*===== Colores =====*/
   /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
   /* HSL color mode */
-  --hue-color: 224;
-  --first-color: hsl(var(--hue-color), 89%, 60%);
+   --hue-color: 190;
+  --first-color: hsl(var(--hue-color),100%, 42%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
@@ -155,7 +155,7 @@ img {
 }
 .nav__logo {
   color: var(--second-color);
-}
+  }
 .nav__toggle {
   color: var(--second-color);
   font-size: 1.5rem;
@@ -218,7 +218,10 @@ img {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 360px;
+  width: 400px;
+  top:auto;
+  margin: auto;
+
 }
 
 /*BUTTONS*/
@@ -294,14 +297,25 @@ img {
 .skills__html {
   width: 95%;
 }
-.skills__css {
+.skills__java {
   width: 85%;
 }
 .skills__js {
   width: 65%;
 }
-.skills__ux {
+.skills__react {
+  width: 20%;
+}
+.skills__verilog {
+  width: 70%;
+}
+.skills__vhdl {
+  width: 60%;
+}
+.skills__cpp{
   width: 85%;
+}.skills__python{
+  width: 50%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -354,6 +368,7 @@ img {
 .footer__title {
   font-size: 2rem;
   margin-bottom: var(--mb-4);
+  display: table-row-group;
 }
 .footer__social {
   margin-bottom: var(--mb-4);

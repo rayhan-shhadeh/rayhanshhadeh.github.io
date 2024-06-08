@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1294b1;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.project {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.project h2 {
+    color: #1294b1;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<script> function toggleDetails(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
+</script>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#project1">Project 1</a></li>
+            <li><a href="#project2">Project 2</a></li>
+            <li><a href="#project3">Project 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="project1" class="project">
+            <h2>Project 1</h2>
+            <p>Description of Project 1.</p>
+            <button onclick="toggleDetails('details1')">Show Details</button>
+            <div id="details1" class="details">
+                <p>More details about Project 1...</p>
+            </div>
+        </section>
+        <section id="project2" class="project">
+            <h2>Project 2</h2>
+            <p>Description of Project 2.</p>
+            <button onclick="toggleDetails('details2')">Show Details</button>
+            <div id="details2" class="details">
+                <p>More details about Project 2...</p>
+            </div>
+        </section>
+        <section id="project3" class="project">
+            <h2>Project 3</h2>
+            <p>Description of Project 3.</p>
+            <button onclick="toggleDetails('details3')">Show Details</button>
+            <div id="details3" class="details">
+                <p>More details about Project 3...</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Name</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
