@@ -200,8 +200,8 @@
                 <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/ai.jpg" alt="">
+                    <a href="" class="work__img" >
+                        <img src="assets/img/ai.jpg" alt="" >
                     </a>
                     <a href="" class="work__img">
                         <img src="assets/img/nodejs.jpg" alt="">
@@ -254,5 +254,46 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            function showProjectDetails(projectId) {
+            const modal = document.getElementById('project-details-modal');
+            const title = document.getElementById('modal-title');
+            const description = document.getElementById('modal-description');
+        
+            switch (projectId) {
+                case 'project1':
+                    title.textContent = 'AI';
+                    description.textContent = 'Multi Class Classification Artificial Intelligence Course Implemented an AI application in Python to address binary and multi-class classification problems, utilizing the softmax algorithm for efficient decision-making. Developed a robust and scalable framework for data preprocessing, feature extraction, and model training to ensure accurate classification results. Designed and implemented various machine learning models, including neural networks, to analyze and classify input data effectively. Conducted comprehensive experimentation and optimization to fine-tune model parameters and enhance classification performance. Integrated the application with user-friendly interfaces for input data submission and result visualization, ensuring accessibility for end-users';
+                    break;
+                case 'project2':
+                    title.textContent = 'Advanced Software';
+                    description.textContent = 'Description of Project 2.';
+                    break;
+                case 'project3':
+                    title.textContent = 'Web Development';
+                    description.textContent = 'Description of Project 3.';
+                    break;
+                default:
+                    title.textContent = 'Unknown Project';
+                    description.textContent = 'No description available.';
+            }
+        
+            modal.style.display = 'block';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('project-details-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('project-details-modal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+        
+        </script>
     </body>
 </html>
