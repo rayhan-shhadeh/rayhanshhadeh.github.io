@@ -437,6 +437,7 @@ img{
         &__form{
             width: 360px;
             padding-top: 2rem ;
+            display: inherit;
         }
         &__container{
             justify-items: center;

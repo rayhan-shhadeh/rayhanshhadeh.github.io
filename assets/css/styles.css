@@ -9,7 +9,7 @@
   /* HSL color mode */
    --hue-color: 190;
   --first-color: hsl(var(--hue-color),100%, 42%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: hsl(var(--hue-color), 56%, 24%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -336,8 +336,47 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+.Thank-section {
+margin-right: 3rem;
+margin-left: 3rem;
+  justify-content: center;
+  align-items: center;
+
+}
+.hobbies{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#thank{
+  border-radius: 30px;
+  margin-top: 7px;
+  align-self: center;
+display: flex;
+justify-content: space-around;
+align-items: center;
+align-self: center;
+animation: infinite 0.5  fadein;
+box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #c9d4dc ;
+
+
+
+}
+#thank button{
+  align-self: center;
+  border-radius: 30px;
+  text-align: center;
+
+  
+}
+
 
 /* ===== CONTACT =====*/
+#contact{
+  display: inherit;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -347,6 +386,7 @@ img {
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+
 }
 .contact__button {
   display: block;
@@ -366,9 +406,8 @@ img {
   padding: 2rem 0;
 }
 .footer__title {
-  font-size: 2rem;
-  margin-bottom: var(--mb-4);
-  display: table-row-group;
+  font-size: 1.5rem;
+  margin-bottom: var(--mb-2);
 }
 .footer__social {
   margin-bottom: var(--mb-4);
@@ -433,7 +472,9 @@ img {
     padding-top: 2rem;
   }
   .contact__container {
+    display: flex;
     justify-items: center;
+    ;
   }
 }
 @media screen and (min-width: 768px) {

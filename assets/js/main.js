@@ -55,3 +55,31 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+
+// confiti party effect
+
+        // for starting the confetti 
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 500); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        start();
+        stop();
+        party.confetti(runButton, {
+            // Specify further (optional) configuration here.
+            count: party.variation.range(0, 100),
+            size: party.variation.range(0.6, 1.4),
+        });
+// if you dont want to make it stop and make it infinite you can just remove the stop function 
