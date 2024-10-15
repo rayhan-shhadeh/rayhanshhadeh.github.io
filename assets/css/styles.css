@@ -320,7 +320,17 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
-
+.IEEE h4{
+  text-align: center;
+}
+.iconify-icons{
+  width: 100px;
+  size: 100px;
+}
+.skills-section{
+  display: flex;
+  flex-direction: row;
+}
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
